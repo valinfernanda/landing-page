@@ -1,18 +1,98 @@
-*{
-    margin:0;
-    padding:0; 
-    box-sizing:border-box;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.container{
-    background-color: black;
-    display: flex; /*ini wajib ada*/
-    flex-direction: row;
-    height:500px;
-    justify-content:center;
+body {
+    background-color: #EACACB;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border: #464ED5 18px solid;
+    padding: 45px;
+}
+
+.container .navigation {
+    display: flex;
+    color:  #464ED5;
+}
+
+.container .navigation .logo {
+    flex: 4;
+}
+
+.container .navigation .navBar {
+    flex: 1;
+    display: flex;
+    justify-content: space-around;
     align-items: center;
 }
-.container .box1{
+
+.container .navigation .logo {
+    cursor: pointer;
+}
+
+.container .navigation .navBar .navAction {
+    text-decoration: none;
+    padding: 5px;
+}
+
+.container .navigation .navBar .active {
+    border-bottom: black 3px solid;
+}
+
+.container .mainPage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.container .mainPage .imageHero #image {
+    width: 300px;
+    height: 400px;
+    filter: drop-shadow(5px 5px 16px gray);
+    border-radius: 20px;
+    margin-left: 45px;
+}
+
+.container .mainPage .desc {
+    color: #464ED5;
+    flex-wrap: wrap;
+}
+
+.container .mainPage .desc h1 {
+    font-size: 80px;
+}
+
+.container .mainPage .desc p {
+    font-size: 40px;
+}
+
+.container .mainPage .imageHero p {
+    position: absolute;
+    right: 20%;
+    top: 70%;
+    color: grey;
+    font-size: 15px;
+    text-shadow: 5px 5px 5px white;
+}
+
+
+/* .container{
+    background-color: black;
+    /* display: flex; /*ini wajib ada*/
+    /* flex-direction: row;
+    height:500px; */
+
+    /* align-items: center; */ */
+}
+/* .container .box1{
     width:120px; 
     height:120px; 
     background-color: blue;
@@ -27,4 +107,4 @@
     width:120px; 
     height:120px; 
     background-color: red;
-}
+} */ */
