@@ -1,0 +1,30 @@
+*{
+    margin:0;
+    padding:0; 
+    box-sizing:border-box;
+}
+
+.container{
+    background-color: black;
+    display: flex; /*ini wajib ada*/
+    flex-direction: row;
+    height:500px;
+    justify-content:center;
+    align-items: center;
+}
+.container .box1{
+    width:120px; 
+    height:120px; 
+    background-color: blue;
+}
+.container .box2{
+    width:120px; 
+    height:120px; 
+    background-color: pink;
+}
+
+.container .box3{
+    width:120px; 
+    height:120px; 
+    background-color: red;
+}
